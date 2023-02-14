@@ -1,0 +1,22 @@
+<div class="flex rounded-md bg-slate-600 h-full m-3 p-3">
+    <div class="flex flex-col">
+        <div *ngIf="big==1; else big2">
+            <div>
+                Большие габариты имеет автомобиль Caterpillar 797B. Это самая большая машина в мире – она принадлежит к типу карьерных самосвалов. Длина автомонстра равняется почти 15 метрам, при ширине 9,5 метров и высоте около 8 метров. Вес самосвала - рекордные 280 тонн.
+                <img src="https://abs-magazine.ru/photo/big/hjrmn166kvxz.jpg">
+            </div>
+        </div>
+        <ng-template #big2><div *ngIf="big==2; else big3">Ан-225 «Мрия», изготовленный во второй половине 1980-х годов киевским авиационным заводом «Антонов», был самым большим и тяжелым самолетом в мире. Его высота, более 18 метров, почти соответствовала высоте шестиэтажного дома
+            <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2016/05/10/thumbs_b_c_58320640c28147a5277880c1f4cb7887.jpg">
+        </div></ng-template>
+        <ng-template #big3><div>
+            Knock Nevis — супертанкер под норвежским флагом. Его размеры составляли: 458,45 метров длины и 69 метров ширины, что делало его крупнейшим судном мира до ввода в строй супертанкера-газозавода «Prelude FLNG»
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Knock_Nevis.jpg/300px-Knock_Nevis.jpg">
+        </div></ng-template>
+        <div class="align-bottom" class="h-8 flex-row flex">
+            <button class="flex-grow border-solid border-4" (click)="car()">car</button>
+            <button class="flex-grow border-solid border-4" (click)="plane()">plane</button>
+            <button class="flex-grow border-solid border-4" (click)="ship()">ship</button>
+        </div>
+    </div>
+</div>
