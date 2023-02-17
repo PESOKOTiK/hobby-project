@@ -7,13 +7,15 @@ import { AboutComponent } from './about/about.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FormsModule } from '@angular/forms';
 import { BigComponent } from './big/big.component';
+import { MeComponent } from './me/me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     FeedbackComponent,
-    BigComponent
+    BigComponent,
+    MeComponent
   ],
   imports: [
     BrowserModule,

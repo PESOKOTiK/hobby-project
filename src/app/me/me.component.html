@@ -1,0 +1,7 @@
+<div class="rounded-md bg-slate-600 h-full m-3 p-3 items-center">
+    <h1 class="text-center">itS ME</h1>
+    <p>My name is {{myname}}</p>
+    <p>I'm {{age}} y.o.</p>
+    <p *ngIf="isMale;else else1">I'm boy</p>
+    <ng-template #else1>I'm girl</ng-template>
+</div>
